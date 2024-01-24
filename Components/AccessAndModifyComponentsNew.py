@@ -1,5 +1,5 @@
 #										_
-#									   (_)
+#									 ! (_)
 #  _ __ ___   __ _ _ __ ___   ___  _ __  _  ___ _ __ ___
 # | '_ ` _ \ / _` | '_ ` _ \ / _ \| '_ \| |/ _ \ '_ ` _ \
 # | | | | | | (_| | | | | | | (_) | | | | |  __/ | | | | |
@@ -22,7 +22,7 @@ selectedActors = MyEditorUtility().get_selection_set()
 
 for actor in selectedActors:
     unreal.log(actor.get_name())
-    unreal.log("*************************************************")
+    unreal.log("#************************************************")
 
     SMCompts = actor.root_component.get_children_components(True)
     comptsCount = len(SMCompts)
@@ -37,3 +37,4 @@ for actor in selectedActors:
             print(SMComptT)
         else:
             print(">>FALSE")
+ 
